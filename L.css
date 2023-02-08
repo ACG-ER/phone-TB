@@ -1,0 +1,47 @@
+.focus {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.focus img {
+    width: 100%;
+    height: 100%;
+}
+
+.focus ul {
+    overflow: hidden;
+    margin-left: -100%;
+    width: 500%;
+}
+
+.focus ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+}
+
+.focus ol {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin: 0;
+}
+
+.focus ol li {
+    display: inline-block;
+    /*使li标签在一行显示*/
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    list-style: none;
+    transition: all .3s;
+    /*使宽度慢慢变化*/
+}
+
+.focus ol li.current {
+    width: 15px;
+    background-color: coral;
+}
